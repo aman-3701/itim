@@ -9,11 +9,13 @@ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 # Configure basic SSH jail
 sudo tee /etc/fail2ban/jail.d/ssh.local > /dev/null <<EOL
 [sshd]
+backend = systemd
 enabled = true
-port = ssh
+#port = ssh
+port  = 22
 filter = sshd
-logpath = /var/log/auth.log
-maxretry = 5
+#logpath = /var/log/auth.log
+maxretry = 3
 bantime = 600
 findtime = 300
 EOL
