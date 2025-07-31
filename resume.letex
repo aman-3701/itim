@@ -1,0 +1,277 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape AMAN YADAV} \\ \vspace{1pt}
+      \vspace{1pt}
+    \small \href{tel:+xxxxxxxxxxxx}{ \raisebox{-0.1\height}\faPhone\ \underline{+91-8795203701} ~} \href{mailto:ry1185449@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ry1185449@gmail.com}} ~ 
+    \href{https://linkedin.com/in/aman-yadav-838374234}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{aman-yadav-838374234}}  ~
+    \href{https://github.com/aman-3701}{\raisebox{-0.2\height}\faGithub\ \underline{aman-3701}} ~
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {CDAC}{FEB 2025 -- AUG 2025}
+      {PG-DITISS (IT Infrastructure, Systems, and Security) - \textbf{Percentage} - \textbf{78\%}}{Pune}
+       \resumeSubheading
+      {CSAUT}{AUG 2020 -- JUL 2024}
+      {Bachelor of Technology in Computer Science - \textbf{CGPA} - \textbf{7.9/10}}{Kanpur}
+  \resumeSubHeadingListEnd
+  
+
+%------RELEVANT COURSEWORK-------
+\section{COURSEWORK / SKILLS}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item Core Java
+                \item Fundamentals of Networking 
+                \item Concept of Operating Systems 
+                \item Programming Concepts 
+                \item IT Infrastructure \& Management and DevOps
+                \item Security Concepts
+                \item Network Defense \& Countermeasures 
+                \item[] % blank item with no bullet
+                \item Public Key Infrastructure
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+\vspace{1pt}
+\resumeSubHeadingListStart
+
+% --- Project 1: RedOpsAI vs BlueShield ---
+\resumeProjectHeading
+  {
+    \begin{tabular}[t]{@{}l}
+      \href{https://github.com/aman-3701/RedopsAi}{\textbf{\large{\underline{RedOpsAI vs BlueShield – AI-Driven Cybersecurity Simulation Framework}}} \raisebox{-0.1\height}{\faExternalLink}} \\ 
+      \textit{Python, Snort IDS, ELK Stack, pfSense, Zero Trust Architecture, VMware/Kali, Custom AI Models} \vspace{4pt}
+    \end{tabular}
+  }{2025}
+  \resumeItemListStart
+    \item \normalsize{Designed and implemented a dynamic, AI-powered Red Team vs Blue Team cybersecurity framework simulating real-world attack-defense scenarios.} \vspace{1pt}
+    \item \normalsize{Developed \textbf{RedOpsAI}, an AI-based offensive engine capable of automated attack simulations, exploit chaining, and vulnerability reconnaissance.} \vspace{1pt}
+    \item \normalsize{Built \textbf{BlueShield}, a Zero Trust defense framework with Snort-based real-time intrusion detection, pfSense firewall policies, and centralized logging via the ELK Stack.} \vspace{1pt}
+    \item \normalsize{Enabled automated Red Team/Blue Team exercises with repeatable attack vectors and defensive responses.} \vspace{1pt}
+    \item \normalsize{Enhanced alert accuracy and threat visibility using AI-model feedback loops and SIEM integrations.}
+  \resumeItemListEnd
+\vspace{1pt}
+
+% --- Project 2: DevOps-Ready Kubernetes App ---
+\resumeProjectHeading
+  {
+    \begin{tabular}[t]{@{}l}
+      \href{https://github.com/aman-3701/ASPhones}{\textbf{\large{\underline{Full-Stack Web  App with Jenkins, Docker  \&  CI/CD Pipeline }}} \raisebox{-0.1\height}{\faExternalLink}} \\
+      \textit{Reactjs, python,MySql, Kubernetes, 
+       SonarQube, OWASP, Docker, Prometheus, Grafana} \vspace{4pt}
+    \end{tabular}
+  }{2025}
+  \resumeItemListStart
+    \item \normalsize{Architected and deployed a cloud-native full-stack application with containerized React.js frontend and FastAPI backend, orchestrated via Kubernetes..} \vspace{1pt}
+    \item \normalsize{{Implemented CI/CD pipeline using Jenkins to automate build, test (with SonarQube and OWASP dependency checks), and deployment workflows.} \vspace{1pt}
+    \item \normalsizeAutomated GitOps-based deployments via ArgoCD, using GitHub as the single source of truth.} \vspace{1pt}
+    \item \normalsize{Developed a CI/CD pipeline via Jenkins for automated build, test, and deploy.} \vspace{1pt}
+    \item \normalsize{Configured Kubernetes Services and Ingress for seamless communication between frontend and backend microservices.} \vspace{1pt}
+    \item \normalsize{Provisioned infrastructure using kubeadm on EC2 (Debian 12), ensuring production-grade cluster setup and secure network policies.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------INTERNSHIP-----------
+% \section{INTERNSHIP}
+% \vspace{-4pt}
+% \resumeSubHeadingListStart
+
+% \resumeSubheading
+%   {Company Name} {Location}
+%   {Intern Role} {Month YYYY -- Month YYYY}
+%   \resumeItemListStart
+%     \resumeItem{Did something awesome.}
+%     \resumeItem{Learned and contributed to team.}
+%   \resumeItemListEnd
+
+% \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section*{TECHNICAL SKILLS}
+\vspace{1pt} % Slight positive spacing for clarity
+\begin{itemize}[leftmargin=0.15in, itemsep=0.5pt, label={}]
+  \item[] \textbf{Languages:} Java , Python(Basic), MySQL, Bash
+  \item[] \textbf{Dev Tools:} VS Code, Git, Docker, Jenkins, Ansible, Terraform, Kubernetes , Helm 
+  \item[] \textbf{Technologies:} Linux (kali, Debian12), Windows Server, Kubernetes, Apache, NGINX, pfSense
+  \item[] \textbf{DevOps:} AWS, GitHub Actions, Docker Swarm, CI/CD, ArgoCD 
+  \item[] \textbf{Security:} Snort, Wireshark, ELK Stack, VPNs, SIEM, Metasploit, Nagios
+  \item[] \textbf{Networking:} TCP/IP, Subnetting, VLANs, NAT, DNS, DHCP, Firewalls (iptables)
+% \item[] \textbf{Certifications:} \href{https://drive.google.com/file/d/1VcmRsOweBT2dBIAiZfWJ6WmstK4wAMb-/view?usp=drive_link}{Java}
+\item[] \textbf{Certifications:} \href{https://drive.google.com/file/d/1VcmRsOweBT2dBIAiZfWJ6WmstK4wAMb-/view?usp=drive_link}{Java~\raisebox{-0.1\height}{\faExternalLink}}
+
+\end{itemize}
+
+
+
+
+%-----------INVOLVEMENT---------------
+%-----------EXTRACURRICULAR-----------
+% \section*{EXTRACURRICULAR}
+% \vspace{1pt} % Slight positive spacing for clarity
+% \begin{itemize}[leftmargin=0.15in, label={$\sbullet[.75]$}]
+%   \item \textbf{College Football Team Captain} – Led the official college team; coordinated training sessions and represented the institute in university-level tournaments. \vspace{1pt}
+%   \item \textbf{Sports Event Organizer} – Managed planning, logistics, and execution of multiple inter-college sports events.
+% \end{itemize}
+% \vspace{1pt}
+
+\end{document}
